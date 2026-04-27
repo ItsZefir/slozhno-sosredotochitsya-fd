@@ -191,6 +191,10 @@
   outline: 1px solid var(--main-text-color);
 }
 
+.card__title {
+  font-weight: var(--text-weight);
+}
+
 .article__images {
   display: grid;
   gap: var(--main-padding);
