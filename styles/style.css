@@ -13,17 +13,18 @@
 }
 
 /* Шапка */
+
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr auto;
   align-items: center;
   justify-items: end;
   padding: var(--main-padding);
+  height: 100vh;
+  min-height: 668px;
 }
 
 .decorated-zone {
-  height: 100vh;
-  min-height: 668px;
   position: relative;
 }
 
@@ -122,10 +123,10 @@
   content: "";
   position: absolute;
   visibility: var(--visible);
-  block-size: 5px;
-  inline-size: 5px;
+  block-size: 9px;
+  inline-size: 9px;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 4px var(--button-color);
+  box-shadow: 0px 0px 4px 2px var(--button-color);
   color: var(--button-color);
   background-color: var(--button-color);
   inset-inline-end: -18px;
@@ -133,6 +134,7 @@
 }
 
 /* Основной контент */
+
 .content {
   display: grid;
   gap: var(--sections-gap);
@@ -161,9 +163,6 @@
   display: grid;
   gap: 10px;
   grid-template-rows: min-content auto;
-}
-
-.section__how .article .article__title {
   font-weight: var(--text-weight);
 }
 
@@ -205,6 +204,7 @@
 }
 
 /* Подвал */
+
 .footer {
   display: flex;
   justify-content: center;
@@ -219,13 +219,8 @@
 }
 
 /* Медиа запросы */
-@media (width >= 768px) {
-  :root {
-    --main-padding: 20px;
-    --main-content-vertical-padding: 60px;
-    --sections-gap: 80px;
-  }
 
+@media (width >= 768px) {
   .section__why,
   .section__how {
     grid-template-columns: 1fr 2fr;

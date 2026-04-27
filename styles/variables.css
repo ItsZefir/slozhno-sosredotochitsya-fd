@@ -1,5 +1,5 @@
 :root {
-  --main-font: 'IBM Plex Mono', monospace;
+  --main-font: "IBM Plex Mono", monospace;
   --main-font-size: 18px;
   --main-line-height: 130%;
   --header-articles-gap: 20px;
@@ -21,4 +21,11 @@
   --link-shadow-color: #ff0070;
   --bg-image: url("../images/cover-image-dark.png");
   --visible: visible;
+}
+@media (width >= 768px) {
+  :root {
+    --main-padding: 20px;
+    --main-content-vertical-padding: 60px;
+    --sections-gap: 80px;
+  }
 }
